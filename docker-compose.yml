@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    command: bash -c "python manage.py runserver 0.0.0.0:8000"
+    container_name: Personalised_multi_User_system
+    restart: always
+    volumes:
+      - .:/Personalised_multi_User_system
+    ports:
+      - "8000:8000"
+    networks:
+      - Personalised_multi_User_system
+
+networks:
+  Personalised_multi_User_system:
+    driver: bridge

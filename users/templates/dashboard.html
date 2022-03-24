@@ -1,0 +1,17 @@
+<div>
+    {% block content %}
+        <h3>Hello, {{ user.username|default:'Guest' }}! welcome to your dashboard!</h3>
+
+        <div>
+            {% if user.is_authenticated %}
+                <a href="{% url 'logout' %}">Logout</a>
+                <br/>
+                <a href="{% url 'profile' %}">profile</a>
+            {% endif %}
+        </div>
+
+        <div>
+            
+        </div>
+    {% endblock %}
+</div>
