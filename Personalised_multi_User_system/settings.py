@@ -140,7 +140,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #                                                                           EXTRAS
 #______________________________________________________________________________________________________________________________________________________________________
 #______________________________________________________________________________________________________________________________________________________________________
-#AUTH_USER_MODEL = 'userAPI.CustomUser'  #userAPI/CustomUser is like the directory
+AUTH_USER_MODEL = 'userAPI.CustomUser'  #userAPI/CustomUser is like the directory
 
 #LOGIN_REDIRECT_URL = "dashboard"
 #LOGOUT_REDIRECT_URL = "login"
